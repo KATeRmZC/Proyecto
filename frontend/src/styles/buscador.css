@@ -1,0 +1,100 @@
+/* Contenedor principal */
+.buscador-content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Barra de búsqueda */
+.search-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Input de búsqueda */
+.search-input {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+
+.search-input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Botones de ayuda y nuevo */
+.search-buttons button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-help {
+  background-color: #eee;
+  color: #333;
+}
+
+.btn-help:hover {
+  background-color: #ddd;
+}
+
+.btn-new {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.btn-new:hover {
+  background-color: #357ABD;
+}
+
+/* Lista de resultados (opcional, si quieres mostrar búsqueda) */
+.search-results {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.search-results li {
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.search-results li:hover {
+  background-color: #f0f4ff;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .search-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search-buttons button {
+    flex: 1;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
